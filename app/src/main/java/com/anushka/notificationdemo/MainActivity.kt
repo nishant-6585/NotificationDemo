@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
             this,
             0,
             tapResultIntent,
-            PendingIntent.FLAG_UPDATE_CURRENT
+            PendingIntent.FLAG_IMMUTABLE
         )
 
         //reply action
@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
             this,
             0,
             intent2,
-            PendingIntent.FLAG_UPDATE_CURRENT
+            PendingIntent.FLAG_IMMUTABLE
         )
         val action2 : NotificationCompat.Action =
             NotificationCompat.Action.Builder(0,"Details",pendingIntent2).build()
@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
             this,
             0,
             intent3,
-            PendingIntent.FLAG_UPDATE_CURRENT
+            PendingIntent.FLAG_IMMUTABLE
         )
         val action3 : NotificationCompat.Action =
             NotificationCompat.Action.Builder(0,"Settings",pendingIntent3).build()
